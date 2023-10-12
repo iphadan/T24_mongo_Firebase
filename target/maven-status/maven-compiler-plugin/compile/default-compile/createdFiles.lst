@@ -1,0 +1,6 @@
+coop\MongoToFirebase\MongoToFirebaseApplication.class
+coop\MongoToFirebase\repository\AccountInfoRepository.class
+coop\MongoToFirebase\service\MongoScheduledChangeService.class
+coop\MongoToFirebase\models\AccountInfo.class
+coop\MongoToFirebase\service\FirebaseCRUDService.class
+coop\MongoToFirebase\service\MongoListenerService.class
