@@ -1,8 +1,25 @@
+server:
+  port: 8082
 
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/t24_to_mongo
+      uri: mongodb://10.1.125.52:27017
+      auto-index-creation: true
+      authentication-database: admin
+      username: root
+      password: root
+      database: t24_to_mongo
+      port: 27017
+      host: localhost
 
-server:
-  port: 8082
+
+jwt:
+  secret: 586E5A7234753778214125442A472D4B6150645367566B59703373357638792F
+  expiration: 30000000
+
+application:
+  security:
+    jwt:
+      refresh-token:
+        expiration: 6048000000000

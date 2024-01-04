@@ -32,7 +32,7 @@ public class MongoToFirebaseApplication {
 
 		FirebaseOptions options = new FirebaseOptions.Builder()
 				.setCredentials(GoogleCredentials.fromStream(serviceAccount))
-				.setDatabaseUrl("https://firstfirebase-1c930-default-rtdb.europe-west1.firebasedatabase.app")
+				.setDatabaseUrl("https://daily-report-152db-default-rtdb.europe-west1.firebasedatabase.app")
 				.build();
 
 		FirebaseApp.initializeApp(options);
@@ -50,7 +50,7 @@ public class MongoToFirebaseApplication {
 	}
 	@Bean
 	public MongoClient mongoClient() {
-		return   MongoClients.create("mongodb://localhost:27017");
+		return   MongoClients.create("mongodb://10.1.125.52:27017");
 	}
 
 
