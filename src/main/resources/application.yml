@@ -4,7 +4,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://10.1.125.52:27017
+      uri: mongodb://localhost:27017
       auto-index-creation: true
       authentication-database: admin
       username: root
